@@ -7,7 +7,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class Comic extends Model
 {
-    public $comic = ['artists', 'writers' => 'array'];
+    public $comics = [
+        'writers' => 'array',
+        'artists' => 'array'
+    ];
 
     use HasFactory;
 }
