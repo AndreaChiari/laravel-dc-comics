@@ -15,9 +15,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [HomeController::class, 'index'])->name('home');
-Route::get('/index', [IndexController::class, 'index'])->name('index');
+Route::get('/', [ComicController::class, 'index'])->name('home');
+Route::get('/index', [HomeController::class, 'index'])->name('index');
+
 
 //rotta per vedere la lista dei comics
+Route::resource('comics', ComicController::class);
 Route::get('/comics', [ComicController::class, 'index'])->name('comics.index');
 Route::get('/comics/{id}', [ComicController::class, 'show'])->name('comics.show');
