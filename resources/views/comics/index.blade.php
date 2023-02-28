@@ -10,7 +10,7 @@
           @foreach($comics as $comic)
             <div class="card">
                 <img src="{{$comic->thumb}}" alt="card.type">
-                <h3>{{ $comic['title']}}</h3>
+                <h3>{{ $comic->title}}</h3>
             </div>
           @endforeach
             <button class="button-cards"> LOAD MORE </button>
