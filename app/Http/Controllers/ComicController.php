@@ -40,7 +40,7 @@ class ComicController extends Controller
         $comic->type = $data['type'];
         $comic->artists = $data['artists'];
         $comic->writers = $data['writers'];
-
+        return redirect()->route('comics.index');
         $comic->save();
     }
 
@@ -50,7 +50,7 @@ class ComicController extends Controller
     public function show(string $id)
     {
         $comic = Comic::FindOrFail($id);
-        return redirect()->route('comics.show', ['id' => $comic->id]);
+        return view('comics.show', compact('comic'));
     }
 
     /**
