@@ -66,8 +66,38 @@ header {
 }
 
 //main
+.detail-container {
+
+    div {
+        width: 150px;
+        min-height: 400px;
+
+    }
+
+    .info-container {
+        height: 100px;
+        width: 900px;
+
+        h1 {
+            width: 800px;
+        }
+    }
+}
+
+.artist-section,
+.writer-section {
+    p {
+        width: 100px;
+    }
+}
+
 .create-container {
     background-color: rgb(24, 62, 98);
+    border-radius: 10px;
+
+    h1 {
+        color: white;
+    }
 }
 
 .jumbotron {

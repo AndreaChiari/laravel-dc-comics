@@ -1,7 +1,8 @@
 @extends('home')
 
 @section('content')
-<div class="container create-container">
+<div class="container create-container pt-4">
+    <h1 class="text-center mb-4">MAKE YOUR OWN COMIC!</h1>
     <form method="POST" action="{{route('comics.store')}}">
        @csrf
         <div class="d-flex justify-content-center">
@@ -67,7 +68,7 @@
             </div>
         </div>
         <div class="justify-content-center d-flex">
-            <button type="submit" class="btn btn-success mb-3 me-5">Salva</button>
+            <button href="" class="btn btn-small btn-success mb-3 me-5">SAVE</button>
             <a href="{{route('home')}}" class="btn btn-small btn-secondary mb-3">HOME</a>
         </div>
     </form>
