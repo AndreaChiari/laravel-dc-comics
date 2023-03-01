@@ -16,6 +16,9 @@
 
 // header
 header {
+    position: relative;
+    z-index: 3;
+
     div {
         width: 1200px;
         margin: auto;
@@ -181,7 +184,7 @@ main {
     z-index: 1;
     position: absolute;
     left: 628px;
-    bottom: -72px;
+    bottom: -110px;
     display: flex;
     align-items: center;
     justify-content: center;

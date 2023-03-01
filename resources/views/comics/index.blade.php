@@ -9,8 +9,10 @@
         <section class="content">
           @foreach($comics as $comic)
             <div class="card">
-                <img src="{{$comic->thumb}}" alt="card.type">
-                <h3>{{ $comic->title}}</h3>
+                <a href="{{route('comics.show',$comic->id)}}">
+                    <img src="{{$comic['thumb']}}" alt="card.type">
+                </a>
+                <h3>{{ $comic['title']}}</h3>
             </div>
           @endforeach
             <button class="button-cards"> LOAD MORE </button>
