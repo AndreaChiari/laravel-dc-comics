@@ -68,7 +68,7 @@
             </div>
         </div>
         <div class="justify-content-center d-flex">
-            <button href="" class="btn btn-small btn-success mb-3 me-5">SAVE</button>
+            <button type="submit" class="btn btn-small btn-success mb-3 me-5">SAVE</button>
             <a href="{{route('home')}}" class="btn btn-small btn-secondary mb-3">HOME</a>
         </div>
     </form>
