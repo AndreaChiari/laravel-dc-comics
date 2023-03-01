@@ -50,7 +50,7 @@ class ComicController extends Controller
     public function show(string $id)
     {
         $comic = Comic::FindOrFail($id);
-        return view('comics.show', compact('comic'));
+        return redirect()->route('comics.show', ['id' => $comic->id]);
     }
 
     /**
