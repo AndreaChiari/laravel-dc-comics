@@ -15,7 +15,9 @@
                 <h3>{{ $comic['title']}}</h3>
             </div>
           @endforeach
-            <button class="button-cards"> LOAD MORE </button>
-        </section>
-    </div>
+            <a class="button-cards"> LOAD MORE </a>
+           <a class="button-create" href="{{route('comics.create')}}">CREATE YOUR COMIC!</a>
+      </section>
+  </div>
 @endsection
+                
