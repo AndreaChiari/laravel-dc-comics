@@ -3,6 +3,7 @@
 @section('content')
 
 <div class="container pt-5">
+    <a href="{{route('home')}}" class="btn btn-small btn-secondary mb-3">HOME</a>
     <div class="detail-container d-flex">
         <div class="info-container">
             <h1>{{$comic->title}}</h1>
