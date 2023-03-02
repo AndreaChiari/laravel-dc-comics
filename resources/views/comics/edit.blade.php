@@ -3,7 +3,7 @@
 @section('content')
 <div class="container create-container pt-4">
     <h1 class="text-center mb-4">MAKE YOUR OWN COMIC!</h1>
-    <form method="POST" action="{{route('comics.update',$comic->id)}}">
+    <form method="POST" action="{{route('comics.store',$comic->id)}}">
         @method('PUT')
        @csrf
         <div class="d-flex justify-content-center">
@@ -11,7 +11,7 @@
                 <div class="row mb-4">
                     <div class="col-6">
                         <label for="title" class="form-label">Title</label>
-                        <input type="text" class="form-control" id="title" placeholder="title" name="title" required value="{{$comic->title}}">
+                        <input type="text" class="form-control" id="title" placeholder="title" name="title" required value="{{ $comic->title}}">
                     </div>
                 </div>
                 <div class="row mb-4">
