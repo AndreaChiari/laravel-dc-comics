@@ -1,8 +1,8 @@
 <footer>
     <div class="container-index">
         <section class="index-recap">
-            <div class="row">
-                <div class="column">
+            <div class="d-flex footer-container">
+                <div class="list-container">
                     <h2>DC COMICS</h2>
                     <ul>
                         <li><a href="#">Characters</a></li>
@@ -19,7 +19,7 @@
                         <li><a href="#">Comics</a></li>
                     </ul>
                 </div>
-                <div class="column">
+                <div class="list-container">
                     <h2>DC</h2>
                     <ul>
                         <li><a href="#">Characters</a></li>
@@ -31,7 +31,7 @@
                         <li><a href="#">News</a></li>
                     </ul>
                 </div>
-                <div class="column">
+                <div class="list-container">
                     <h2>SITES</h2>
                     <ul>
                         <li><a href="#">Characters</a></li>

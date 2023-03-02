@@ -2,7 +2,7 @@
 
 @section('content')
 
-<div class="container pt-5">
+<div class="container pt-3 pb-4 mb-3">
     <a href="{{route('home')}}" class="btn btn-small btn-secondary mb-3">HOME</a>
     <div class="detail-container d-flex">
         <div class="info-container">

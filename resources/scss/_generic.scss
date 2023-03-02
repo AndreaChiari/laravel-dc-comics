@@ -216,13 +216,13 @@ main {
             text-decoration: none;
         }
 
-        .row {
+        .footer-container {
             width: calc(100% / 2);
             display: flex;
             gap: 30px;
             padding-top: 30px;
 
-            .column {
+            .list-container {
                 h2 {
                     color: $color-white ;
                     margin-bottom: 10px;
@@ -243,7 +243,7 @@ main {
     z-index: 1;
     position: absolute;
     left: 628px;
-    bottom: 487px;
+    bottom: -70px;
     display: flex;
     align-items: center;
     justify-content: center;
