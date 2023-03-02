@@ -13,6 +13,7 @@
                     <img src="{{$comic['thumb']}}" alt="card.type">
                 </a>
                 <h3>{{ $comic['title']}}</h3>
+                <a href="{{route('comic.edit',$comic->id)}}"><i class="fa-solid fa-pen-to-square"></i></a>
             </div>
           @endforeach
             <a class="button-cards"> LOAD MORE </a>
